@@ -10,4 +10,12 @@ public class Task_1 {
         Scanner.close();
         System.out.println("Треугольное число = " + Triangle(a) + "\n");
     }
+    
+    public static int Triangle(int num) {
+        if (num == 1) {
+            return 1;
+        }
+        return Triangle(num - 1) + num;
+    }
+}
 
